@@ -81,6 +81,10 @@ call plug#end()
     "disable autocommenting
     autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
     
+    "disable syntax highlighting in markdown files
+    autocmd BufRead,BufNewFile {*.markdown,*.mdown,*.mkdn,*.md,*.mkd,*.mdwn,*.mdtxt,*.mdtext,*.text} set filetype=markdown
+    autocmd FileType markdown let g:indentLine_enabled=0
+
     "use handlebars as html
     au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=html
     
