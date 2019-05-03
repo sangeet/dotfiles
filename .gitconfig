@@ -1,3 +1,5 @@
 [user]
 	email = sangeet.khatri@protonmail.com
 	name = sangeet
+[core]
+	editor = vim
