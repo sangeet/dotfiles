@@ -254,6 +254,6 @@ bindsym $mod2+Shift+l exec xdotool mousemove_relative -- 10 0
 bindsym $mod2+y exec xdotool mousemove 960 540
 bindsym $mod2+g exec xdotool mousemove 2880 540
 
-bindsym Ctrl+Shift+z exec xdotool click 1
+bindsym $mod+grave exec xdotool click 1
 bindsym $mod2+z exec xdotool click 3
 
