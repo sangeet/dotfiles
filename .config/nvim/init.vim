@@ -178,7 +178,10 @@ call plug#end()
         " Prettier default: false
         let g:prettier#config#single_quote = 'true'
 
-    "vim-airline config
+        "bracket spacing
+        let g:prettier#config#bracket_spacing = 'true'
+
+        "vim-airline config
         let g:airline#extensions#tabline#enabled = 1
         let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
         let g:airline_powerline_fonts = 1

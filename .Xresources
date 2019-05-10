@@ -22,6 +22,10 @@ URxvt.iso14755_52: false
 URxvt*transparent: true
 URxvt*shading: 20
 
+!! Line Spacing
+URxvt*lineSpace: 2
+URxvt*letterSpace: 0
+
 ! special
 *.foreground:   #93a1a1
 *.background:   #002b36
