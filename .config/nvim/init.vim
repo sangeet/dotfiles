@@ -76,7 +76,7 @@ call plug#end()
 
     "code folding
     set foldmethod=indent
-    set foldlevelstart=1
+    set foldlevelstart=10
     
     "disable autocommenting
     autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -91,6 +91,7 @@ call plug#end()
 "Leader shortcuts
     nmap <Leader>w :w<CR>   
     nmap <Leader>q :q<CR>   
+    nmap <Leader>t bi<<Esc>ea><Esc>vByPwi/<Esc>cit
 
 "Ctrl+hjkl navigation for insert and command mode
     inoremap <C-h> <Left>
@@ -271,7 +272,7 @@ call plug#end()
         "folding based on this plugin syntax definitions
             augroup javascript_folding
                 au!
-                au FileType javascript setlocal foldmethod=syntax
+                au FileType javascript setlocal foldmethod=indent
             augroup END
 
 "Theming
