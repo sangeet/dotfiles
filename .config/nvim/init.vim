@@ -4,6 +4,7 @@ let mapleader = " "
 call plug#begin()
     "Functionality
         Plug 'SirVer/ultisnips'
+        Plug 'Xuyuanp/nerdtree-git-plugin'
         Plug 'easymotion/vim-easymotion'
         Plug 'jiangmiao/auto-pairs'
         Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
@@ -14,17 +15,19 @@ call plug#begin()
         Plug 'tpope/vim-commentary'
         Plug 'tpope/vim-surround'
         Plug 'vim-airline/vim-airline'
+        Plug 'ap/vim-css-color'
+        Plug 'vim-scripts/CSSMinister'    
         Plug 'vim-scripts/Tabmerge'
         Plug '~/.fzf'
 
     "Cosmetic
+        " Plug 'nathanaelkane/vim-indent-guides'
+        Plug 'Yggdroot/indentLine'
+        Plug 'dylanaraps/wal.vim'
         Plug 'joshdick/onedark.vim'
         Plug 'morhetz/gruvbox'
-        Plug 'dylanaraps/wal.vim'
-        " Plug 'nathanaelkane/vim-indent-guides'
         Plug 'rafi/awesome-vim-colorschemes'
         Plug 'ryanoasis/vim-devicons'
-        Plug 'Yggdroot/indentLine'
         Plug 'tomasiser/vim-code-dark'
         Plug 'vim-airline/vim-airline-themes'
         Plug 'vwxyutarooo/nerdtree-devicons-syntax'
@@ -169,7 +172,7 @@ call plug#end()
 
         " max line length that prettier will wrap on
         " Prettier default: 80
-        let g:prettier#config#print_width = 100
+        let g:prettier#config#print_width = 160
 
         " number of spaces per indentation level
         " Prettier default: 2
