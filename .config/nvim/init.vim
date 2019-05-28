@@ -172,7 +172,7 @@ call plug#end()
 
         " max line length that prettier will wrap on
         " Prettier default: 80
-        let g:prettier#config#print_width = 160
+        let g:prettier#config#print_width = 80
 
         " number of spaces per indentation level
         " Prettier default: 2
