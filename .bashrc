@@ -145,6 +145,8 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/snap/bin:$PATH"
 export PATH="$HOME/snap:$PATH"
 
+export BROWSER="google-chrome"
+
 alias gotop='gotop -s'
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
