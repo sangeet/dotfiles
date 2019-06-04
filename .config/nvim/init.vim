@@ -23,7 +23,6 @@ call plug#begin()
     "Cosmetic
         " Plug 'nathanaelkane/vim-indent-guides'
         Plug 'Yggdroot/indentLine'
-        Plug 'dylanaraps/wal.vim'
         Plug 'joshdick/onedark.vim'
         Plug 'morhetz/gruvbox'
         Plug 'rafi/awesome-vim-colorschemes'
@@ -124,6 +123,10 @@ call plug#end()
 
     "ts shuffles the top left/right top/bottom
     nnoremap ts <C-W>R
+
+    "vertical split resize
+    nnoremap tc= :vertical resize +10<CR>
+    nnoremap tc- :vertical resize -10<CR>
 
     "split maximize and split normalize
     nnoremap tb <C-W>\|
