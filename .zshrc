@@ -100,6 +100,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Path prompt length
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+POWERLEVEL9K_SHORTEN_STRATEGY=truncate_from_right
+POWERLEVEL9K_SHORTEN_DELIMITER=''
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir)
+POWERLEVEL9K_VI_MODE_INSERT_BACKGROUND='darkkhaki'
+POWERLEVEL9K_VI_MODE_INSERT_FOREGROUND='black'
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/snap/bin:$PATH"
@@ -116,8 +121,6 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias :c=clear
 alias :q=exit
 alias vim=nvim
-
-fortune
 
 clear_vim_swap() {
     rm -rf ~/.local/share/nvim/swap/* -v
