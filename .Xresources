@@ -26,7 +26,7 @@ URxvt*shading: 20
 URxvt*lineSpace: 2
 URxvt*letterSpace: 0
 
-#define nord0 #2E3440
+#define nord0 #111111
 #define nord1 #3B4252
 #define nord2 #434C5E
 #define nord3 #4C566A

@@ -115,10 +115,14 @@ export BROWSER="google-chrome"
 # vi mode
 bindkey -v
 
+# Enable backspace
+bindkey "^?" backward-delete-char
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias gotop='gotop -s'
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias sl="ls --color=none"
 alias :c=clear
 alias :q=exit
 alias vim=nvim
