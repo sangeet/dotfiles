@@ -106,6 +106,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir)
 POWERLEVEL9K_VI_MODE_INSERT_BACKGROUND='darkkhaki'
 POWERLEVEL9K_VI_MODE_INSERT_FOREGROUND='black'
 
+export TERM="st-256color"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/snap/bin:$PATH"
 export PATH="$HOME/snap:$PATH"

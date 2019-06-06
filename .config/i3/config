@@ -31,7 +31,7 @@ font pango:UbuntuMono Nerd Font Mono 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt 
+bindsym $mod+Return exec xst 
 
 # kill focused window
 bindsym $mod+Shift+q kill

@@ -22,6 +22,7 @@ call plug#begin()
 
     "Cosmetic
         " Plug 'nathanaelkane/vim-indent-guides'
+        Plug 'Rigellute/shades-of-purple.vim'
         Plug 'Yggdroot/indentLine'
         Plug 'joshdick/onedark.vim'
         Plug 'morhetz/gruvbox'
@@ -71,10 +72,6 @@ call plug#end()
 
     " clipboard fix (finally!)
     set clipboard+=unnamedplus
-
-    "terminal colors
-    set t_Co=256
-    set t_ut=
 
     "code folding
     set foldmethod=indent
@@ -282,8 +279,10 @@ call plug#end()
             augroup END
 
 "Theming
+    "terminal colors
+    set t_Co=256
+    set t_ut=
+    set termguicolors
+
     let g:airline_theme='distinguished'
-    set background=dark
     colo codedark
-    " highlight Normal ctermbg=Black
-    " highlight NonText ctermbg=Black
