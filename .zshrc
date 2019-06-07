@@ -130,3 +130,5 @@ alias vim=nvim
 clear_vim_swap() {
     rm -rf ~/.local/share/nvim/swap/* -v
 }
+
+ alias yt-dl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "

@@ -74,4 +74,4 @@ st.cursorshape: 2
 st.xfps: 120
 st.cwscale: 1.1
 st.chscale: 1.1
-st.opacity: 230
+/* st.opacity: 230 */
