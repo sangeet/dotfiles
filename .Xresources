@@ -1,7 +1,7 @@
 urxvt*foreground: white
 urxvt*background: black
 
-URxvt.font: xft:UbuntuMono Nerd Font Mono:size=11
+URxvt.font: xft:Inconsolata Nerd Font Mono:size=11
 URxvt*scrollBar:false
 
 !! Extensions
@@ -69,7 +69,7 @@ URxvt*letterSpace: 0
 st.termname: st-256color
 st.shell: /bin/zsh
 st.borderpx: 5
-st.font: UbuntuMono Nerd Font Mono:pixelsize=14:antialias=true:autohint:true;
+st.font: Inconsolata Nerd Font Mono:pixelsize=14:antialias=true:autohint:false;
 st.cursorshape: 2
 st.xfps: 120
 st.cwscale: 1.1

@@ -285,4 +285,4 @@ call plug#end()
     set termguicolors
 
     let g:airline_theme='distinguished'
-    colo codedark
+    colo onedark
