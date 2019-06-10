@@ -1,28 +1,14 @@
 urxvt*foreground: white
 urxvt*background: black
-
 URxvt.font: xft:Inconsolata Nerd Font Mono:size=11
 URxvt*scrollBar:false
-
-!! Extensions
-! font-size changes the size of the font on the fly
 URxvt.perl-ext-common: font-size,eval
-
-/* URxvt.keysym.C-k:     font-size:increase */
-/* URxvt.keysym.C-j:   font-size:decrease */
-
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-
-!! Disables that irritating Ctrl+Shift Keycap insert mode
 URxvt.iso14755: false
 URxvt.iso14755_52: false
-
-!! Enables Transparency
 URxvt*transparent: true
 URxvt*shading: 20
-
-!! Line Spacing
 URxvt*lineSpace: 2
 URxvt*letterSpace: 0
 
@@ -69,9 +55,17 @@ URxvt*letterSpace: 0
 st.termname: st-256color
 st.shell: /bin/zsh
 st.borderpx: 5
-st.font: Inconsolata Nerd Font Mono:pixelsize=14:antialias=true:autohint:false;
+st.font: Inconsolata Nerd Font Mono:pixelsize=14:antialias=true:autohint:true;
 st.cursorshape: 2
 st.xfps: 120
 st.cwscale: 1.1
 st.chscale: 1.1
 /* st.opacity: 230 */
+Xft.dpi:        96.1259765625
+Xft.antialias:  1
+Xft.hinting:    1
+Xft.hintstyle:  hintfull
+Xft.rgba:       rgb
+Xft.lcdfilter:  lcddefault
+Xcursor.theme:  DMZ-Black
+Xcursor.size:   24
