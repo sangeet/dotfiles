@@ -112,8 +112,8 @@ call plug#end()
     nnoremap td :tabc<CR>
 
     "shift tabs left and right
-    nnoremap t= :tabm +1<CR>
-    nnoremap t- :tabm -1<CR>
+    nnoremap t. :tabm +1<CR>
+    nnoremap t, :tabm -1<CR>
 
     "tT moves the split to new tab
     nnoremap tT <C-W>T
@@ -122,8 +122,8 @@ call plug#end()
     nnoremap ts <C-W>R
 
     "vertical split resize
-    nnoremap tc= :vertical resize +10<CR>
-    nnoremap tc- :vertical resize -10<CR>
+    nnoremap tc. :vertical resize +10<CR>
+    nnoremap tc, :vertical resize -10<CR>
 
     "split maximize and split normalize
     nnoremap tb <C-W>\|
