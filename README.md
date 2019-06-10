@@ -6,7 +6,7 @@ My linux dotfiles configurations for the following applications :
 - i3wm
 - github config
 - redshift
-- Xresources for urxvt
+- Xresources
 - bashrc
 - vlcrc
 
