@@ -18,7 +18,8 @@ call plug#begin()
         Plug 'ap/vim-css-color'
         Plug 'vim-scripts/CSSMinister'    
         Plug 'vim-scripts/Tabmerge'
-        Plug '~/.fzf'
+        Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+        Plug 'junegunn/fzf.vim'
 
     "Cosmetic
         " Plug 'nathanaelkane/vim-indent-guides'
@@ -66,6 +67,7 @@ call plug#end()
     set splitright
     set splitbelow
     set showcmd
+    set autochdir
 
     " vim-devicons needs UTF-8
     set encoding=UTF-8
