@@ -67,7 +67,6 @@ call plug#end()
     set splitright
     set splitbelow
     set showcmd
-    set autochdir
 
     " vim-devicons needs UTF-8
     set encoding=UTF-8
