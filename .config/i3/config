@@ -33,6 +33,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec xst 
 
+# start browser
+bindsym $mod+Shift+Return exec brave-browser 
+
 # kill focused window
 bindsym $mod+Shift+q kill
 

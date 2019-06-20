@@ -169,6 +169,9 @@ call plug#end()
 
     " vim-prettier config
         " Force Async
+
+        nmap <Leader>p :Prettier<CR>:set foldmethod=indent<CR>
+
         let g:prettier#exec_cmd_async = 1
 
         " max line length that prettier will wrap on
@@ -285,5 +288,5 @@ call plug#end()
     set t_ut=
     set termguicolors
 
-    let g:airline_theme='distinguished'
-    colo onedark
+    let g:airline_theme='deep_space'
+    colo deep-space

@@ -134,4 +134,10 @@ clear_vim_swap() {
     rm -rf ~/.local/share/nvim/swap/* -v
 }
 
+get_memory_hogs(){
+    ps -eo size,pid,user,command --sort -size | \
+        awk '{ hr=$1/1024 ; printf("%13.2f Mb ",hr) } { for ( x=4 ; x<=NF ; x++ ) { printf("%s ",$x) } print "" }' |\
+        cut -d "" -f2 | cut -d "-" -f1 | head
+}
+
  alias yt-dl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
