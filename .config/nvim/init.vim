@@ -5,46 +5,31 @@ call plug#begin()
     "Functionality
         Plug 'SirVer/ultisnips'
         Plug 'Xuyuanp/nerdtree-git-plugin'
-        Plug 'easymotion/vim-easymotion'
         Plug 'jiangmiao/auto-pairs'
         Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
         Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-        Plug 'raghur/vim-ghost', {'do': ':GhostInstall'}
         Plug 'scrooloose/nerdtree'
         Plug 'terryma/vim-multiple-cursors'
         Plug 'tpope/vim-commentary'
         Plug 'tpope/vim-surround'
         Plug 'vim-airline/vim-airline'
-        Plug 'ap/vim-css-color'
-        Plug 'vim-scripts/CSSMinister'    
         Plug 'vim-scripts/Tabmerge'
         Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
         Plug 'junegunn/fzf.vim'
 
     "Cosmetic
-        " Plug 'nathanaelkane/vim-indent-guides'
-        Plug 'Rigellute/shades-of-purple.vim'
         Plug 'Yggdroot/indentLine'
-        Plug 'joshdick/onedark.vim'
-        Plug 'morhetz/gruvbox'
         Plug 'rafi/awesome-vim-colorschemes'
         Plug 'ryanoasis/vim-devicons'
-        Plug 'tomasiser/vim-code-dark'
         Plug 'vim-airline/vim-airline-themes'
         Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 
     "Language support
         Plug 'epilande/vim-es2015-snippets'
         Plug 'epilande/vim-react-snippets'
-        Plug 'mustache/vim-mustache-handlebars'
         Plug 'mxw/vim-jsx'
         Plug 'pangloss/vim-javascript'
         Plug 'sheerun/vim-polyglot'
-    
-    "Disabled
-        " coc-emmet works better most of the time
-        " Plug 'mattn/emmet-vim'
-        " Plug 'Shougo/denite.nvim' sucked!
 call plug#end()
 
 " Basic Settings

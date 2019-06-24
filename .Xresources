@@ -12,45 +12,42 @@ URxvt*shading: 20
 URxvt*lineSpace: 2
 URxvt*letterSpace: 0
 
-#define nord0 #111111
-#define nord1 #3B4252
-#define nord2 #434C5E
-#define nord3 #4C566A
-#define nord4 #D8DEE9
-#define nord5 #E5E9F0
-#define nord6 #ECEFF4
-#define nord7 #8FBCBB
-#define nord8 #88C0D0
-#define nord9 #81A1C1
-#define nord10 #5E81AC
-#define nord11 #BF616A
-#define nord12 #D08770
-#define nord13 #EBCB8B
-#define nord14 #A3BE8C
-#define nord15 #B48EAD
+! special
+*.foreground:   #9aa4bd
+*.background:   #1b202a
+*.cursorColor:  #1b202a
 
-*.foreground:   nord4
-*.background:   nord0
-*.cursorColor:  nord4
-*fading: 35
-*fadeColor: nord3
+! black
+*.color0:       #1b202a
+*.color8:       #232936
 
-*.color0: nord1
-*.color1: nord11
-*.color2: nord14
-*.color3: nord13
-*.color4: nord9
-*.color5: nord15
-*.color6: nord8
-*.color7: nord5
-*.color8: nord3
-*.color9: nord11
-*.color10: nord14
-*.color11: nord13
-*.color12: nord9
-*.color13: nord15
-*.color14: nord7
-*.color15: nord6
+! red
+*.color1:       #b15e7c
+*.color9:       #b3785d
+
+! green
+*.color2:       #709d6c
+*.color10:      #709d6c
+
+! yellow
+*.color3:       #b5a262
+*.color11:      #d5b875
+
+! blue
+*.color4:       #608cc3
+*.color12:      #608cc3
+
+! purple
+*.color5:       #8f72bf
+*.color13:      #c47ebd
+
+! cyan
+*.color6:       #56adb7
+*.color14:      #51617d
+
+! white
+*.color7:       #323c4d
+*.color15:      #9aa7bd
 
 st.termname: st-256color
 st.shell: /bin/zsh
