@@ -113,7 +113,7 @@ export TERM="st-256color"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/snap/bin:$PATH"
 export PATH="$HOME/snap:$PATH"
-export BROWSER="google-chrome"
+export BROWSER="brave-browser"
 
 # vi mode
 bindkey -v

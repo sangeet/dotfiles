@@ -74,8 +74,8 @@ call plug#end()
     au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=html
     
 "Leader shortcuts
-    nmap <Leader>w :w<CR>   
-    nmap <Leader>q :q<CR>   
+    nmap <Leader>w :w<CR>
+    nmap <Leader>q :q<CR>
     nmap <Leader>t bi<<Esc>ea><Esc>vByPwi/<Esc>cit
 
 "Ctrl+hjkl navigation for insert and command mode
