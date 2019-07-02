@@ -177,7 +177,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 # finds out, if available)
 bar {
         status_command i3status
-        tray_output eDP
+	tray_output primary
 }
 
 bindsym $mod+shift+x exec i3lock -c 000000 
@@ -204,14 +204,14 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# mate-settings-daemon to set up theme, mouse, etc using Mate options in Control Center
-exec mate-settings-daemon 
+# Dunst notifications
+exec dunst
 
 # Applets after startup
 exec nm-applet
-exec mate-volume-control-applet
-exec mate-power-manager
-exec redshift-gtk
+exec pasyscontrol
+exec lxqt-powermanagement
+# exec redshift-gtk
 exec compton
 
 # Start brave browser on Workspace 1
@@ -227,6 +227,15 @@ for_window [class="^.*"] border pixel 1
 # Swap Escape and Caps key
 exec setxkbmap -option caps:swapescape
 
+# Set mouse input options
+    # Tapping Enabled
+    exec_always xinput set-prop 11 278 1
+    # Middle Emulation Enabled
+    exec_always xinput set-prop 11 296 1
+    # Click Method Enabled
+    exec_always xinput set-prop 11 294 {1 1}
+
+
 # move focused window between monitors
 bindsym $mod+Shift+greater move container to output right
 bindsym $mod+Shift+less move container to output left 
@@ -237,14 +246,14 @@ workspace 3 output HDMI-A-0
 workspace 5 output HDMI-A-0
 workspace 7 output HDMI-A-0
 workspace 9 output HDMI-A-0
-workspace 2 output eDP
-workspace 4 output eDP
-workspace 6 output eDP
-workspace 8 output eDP
-workspace 10 output eDP
+workspace 2 output eDP-1
+workspace 4 output eDP-1
+workspace 6 output eDP-1
+workspace 8 output eDP-1
+workspace 10 output eDP-1
 
 # Quick Mouse Controls
-bindsym $mod2+h exec xdotool mousemove_relative -- -100 0
+
 bindsym $mod2+j exec xdotool mousemove_relative -- 0 100
 bindsym $mod2+k exec xdotool mousemove_relative -- 0 -100
 bindsym $mod2+l exec xdotool mousemove_relative -- 100 0
