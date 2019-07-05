@@ -209,7 +209,7 @@ exec dunst
 
 # Applets after startup
 exec nm-applet
-exec pasyscontrol
+exec pasystray
 exec lxqt-powermanagement
 # exec redshift-gtk
 exec compton
@@ -246,14 +246,15 @@ workspace 3 output HDMI-A-0
 workspace 5 output HDMI-A-0
 workspace 7 output HDMI-A-0
 workspace 9 output HDMI-A-0
-workspace 2 output eDP-1
-workspace 4 output eDP-1
-workspace 6 output eDP-1
-workspace 8 output eDP-1
-workspace 10 output eDP-1
+workspace 2 output eDP
+workspace 4 output eDP
+workspace 6 output eDP
+workspace 8 output eDP
+workspace 10 output eDP
 
 # Quick Mouse Controls
 
+bindsym $mod2+h exec xdotool mousemove_relative -- -100 0
 bindsym $mod2+j exec xdotool mousemove_relative -- 0 100
 bindsym $mod2+k exec xdotool mousemove_relative -- 0 -100
 bindsym $mod2+l exec xdotool mousemove_relative -- 100 0
