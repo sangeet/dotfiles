@@ -230,7 +230,7 @@ exec setxkbmap -option caps:swapescape
 
 # Disable Screen Timeout
 exec xset s off
-exec -dpms
+exec xset -dpms
 
 # Set mouse input options
     # Tapping Enabled
