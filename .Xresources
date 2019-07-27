@@ -14,7 +14,7 @@ URxvt*letterSpace: 0
 
 ! special
 *.foreground:   #9aa4bd
-*.background:   #1b202a
+*.background:   #000000
 *.cursorColor:  #1b202a
 
 ! black
