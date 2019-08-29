@@ -53,6 +53,10 @@ call plug#end()
     set splitbelow
     set showcmd
 
+    " indent lines for tabs
+    set list
+    set list lcs=tab:\|\ 
+
     " vim-devicons needs UTF-8
     set encoding=UTF-8
 
