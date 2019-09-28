@@ -117,8 +117,10 @@ export PATH="$HOME/snap:$PATH"
 export PATH="/opt/gotop:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+export PATH="$HOME/programs/neovim:$PATH"
 
 export BROWSER="brave-browser"
+export EDITOR="nvim"
 
 # vi mode
 bindkey -v
@@ -133,7 +135,7 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias sl="ls --color=none"
 alias :c=clear
 alias :q=exit
-alias nvim=~/programs/nvim.appimage
+# alias nvim=~/programs/nvim.appimage
 alias vim=nvim
 
 clear_vim_swap() {
