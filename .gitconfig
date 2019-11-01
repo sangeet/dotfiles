@@ -3,3 +3,4 @@
 	name = sangeet
 [core]
 	editor = vim
+	excludesfile = /home/khatri/.gitignore_global

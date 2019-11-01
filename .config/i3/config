@@ -245,12 +245,15 @@ exec xset -dpms
 bindsym $mod+Shift+greater move container to output right
 bindsym $mod+Shift+less move container to output left 
 
+# assign monitor layout
+# xrandr --output eDP --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI-A-0 --primary --mode 1920x1080 --pos 0x0 --rotate normal
+
 # Move even workspaces to laptop, odd to bigger monitor
-workspace 1 output HDMI-A-0
-workspace 3 output HDMI-A-0
-workspace 5 output HDMI-A-0
-workspace 7 output HDMI-A-0
-workspace 9 output HDMI-A-0
+workspace 1 output eDP 
+workspace 3 output eDP  
+workspace 5 output eDP  
+workspace 7 output eDP  
+workspace 9 output eDP  
 workspace 2 output eDP
 workspace 4 output eDP
 workspace 6 output eDP
@@ -273,4 +276,5 @@ bindsym $mod2+y exec xdotool mousemove 960 540
 bindsym $mod2+g exec xdotool mousemove 2880 540
 
 bindsym $mod+i exec xdotool click 1
+bindsym ctrl+$mod+i exec xdotool click 2
 bindsym $mod+o exec xdotool click 3

@@ -3,7 +3,6 @@ let mapleader = " "
 " Plugin Block - vim-plug
 call plug#begin()
     "Functionality
-        Plug 'SirVer/ultisnips'
         Plug 'Xuyuanp/nerdtree-git-plugin'
         Plug 'jiangmiao/auto-pairs'
         Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
@@ -11,6 +10,7 @@ call plug#begin()
         Plug 'scrooloose/nerdtree'
         Plug 'terryma/vim-multiple-cursors'
         Plug 'tpope/vim-commentary'
+        Plug 'tpope/vim-sleuth',
         Plug 'tpope/vim-surround'
         Plug 'vim-airline/vim-airline'
         Plug 'vim-scripts/Tabmerge'
@@ -25,10 +25,10 @@ call plug#begin()
         Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 
     "Language support
-        Plug 'epilande/vim-es2015-snippets'
-        Plug 'epilande/vim-react-snippets'
-        Plug 'mxw/vim-jsx'
-        Plug 'pangloss/vim-javascript'
+        " Plug 'epilande/vim-es2015-snippets'
+        " Plug 'epilande/vim-react-snippets'
+        " Plug 'MaxMEllon/vim-jsx-pretty'
+        " Plug 'pangloss/vim-javascript'
         Plug 'sheerun/vim-polyglot'
 call plug#end()
 

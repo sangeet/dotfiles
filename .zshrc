@@ -104,7 +104,7 @@ POWERLEVEL9K_SHORTEN_STRATEGY=truncate_from_right
 POWERLEVEL9K_VI_INSERT_MODE_STRING='I'
 POWERLEVEL9K_VI_COMMAND_MODE_STRING='N'
 POWERLEVEL9K_SHORTEN_DELIMITER=''
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vi_mode dir)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vi_mode vcs dir)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs)
 POWERLEVEL9K_VI_MODE_INSERT_BACKGROUND='darkkhaki'
 POWERLEVEL9K_VI_MODE_INSERT_FOREGROUND='black'
@@ -117,7 +117,7 @@ export PATH="$HOME/snap:$PATH"
 export PATH="/opt/gotop:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
-export PATH="$HOME/programs/neovim:$PATH"
+# export PATH="$HOME/programs/neovim:$PATH"
 
 export BROWSER="brave-browser"
 export EDITOR="nvim"
